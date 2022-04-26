@@ -21,10 +21,14 @@
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
     KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
-<meta name="generator" content="Hexo 6.1.0"><style>mjx-container[jax="SVG"] {
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"><style>mjx-container[jax="SVG"] {
   direction: ltr;
 }
 
@@ -240,7 +244,8 @@ mjx-container[display="true"] + br {
                 <div class="home-article-content markdown-body">
                     
                         
-类别可分性准则：定义与错误率有关又便于计算的类别可分性准则 , 用来衡量在一组特征下第  类和第  类之间的可分程度，其应该满足：(1) 判据应该与错误率(或错误率的上界)有单调关系。(2) 当特征独立时,判据对特征具有可加性,即(3) 应具有度量...
+类别可分性准则：
+定义与错误率有关又便于计算的类别可分性准则 , 用来衡量在一组特征下第  类和第  类之间的可分程度，其应该满足： (1) 判据应该与错误率(或错误率的上界)有单调关系。 (2) 当特征独立时,判据对特征具有可加性,即  (3) ...
                     
                 </div>
 
@@ -268,8 +273,14 @@ mjx-container[display="true"] + br {
 
                 <div class="home-article-content markdown-body">
                     
-                        概念先验概率/后验概率/类条件密度贝叶斯决策：两类问题，错误率定义为所有服从同样分布的独立样本上错误概率的期望,正确率如果决策如果决策
-最小错误率贝叶斯决策$$P\left(\omega_{1} \mid x\right) \gtrless P\le...
+                        
+概念
+先验概率/后验概率/类条件密度
+贝叶斯决策：
+ 两类问题，错误率定义为所有服从同样分布的独立样本上错误概率的期望,正确率 如果决策如果决策
+最小错误率贝叶斯决策
+则
+后验概率可由贝叶斯公式求得  引入似然比阀值，决策规则整理成： 则 常引入对...
                     
                 </div>
 
@@ -398,6 +409,10 @@ mjx-container[display="true"] + br {
 
 
 
+
+
+    
+<script src="/js/code-copy.js"></script>
 
 
 
