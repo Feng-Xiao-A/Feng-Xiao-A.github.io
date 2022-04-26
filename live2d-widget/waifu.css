@@ -69,7 +69,7 @@
 #live2d {
 	cursor: grab;
 	height: 300px;
-	position: relative;
+	position: right;
 	width: 300px;
 }
 
