@@ -710,9 +710,14 @@ mjx-container[display="true"] + br {
   <script>
   ((window.gitter = {}).chat = {}).options = {
     room: 'Hi_/community'
+    activationElement: '.my-special-button',
+    targetElement: '.my-special-target-element'
   };
 </script>
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  <button class="js-gitter-toggle-chat-button">Toggle Chat</button>
+<button class="js-gitter-toggle-chat-button" data-gitter-toggle-chat-state="true">Open Chat</button>
+<button class="js-gitter-toggle-chat-button" data-gitter-toggle-chat-state="false">Close Chat</button>
 </html>
 
 
