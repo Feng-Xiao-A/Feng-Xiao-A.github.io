@@ -103,6 +103,9 @@
 	color: #0684bd; /* #34495e */
 }
 
+
+
+
 @keyframes shake {
 	2% {
 		transform: translate(.5px, -1.5px) rotate(-.5deg);
