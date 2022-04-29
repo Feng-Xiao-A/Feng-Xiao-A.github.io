@@ -440,13 +440,13 @@ mjx-container[display="true"] + br {
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2022/04/28/Pattern%20Recognition/%E4%B9%9D%EF%BC%8C%E9%9D%9E%E7%9B%91%E7%9D%A3%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB/%E9%9D%9E%E7%9B%91%E7%9D%A3%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB/"
+                           href="/2022/04/28/Pattern%20Recognition/%E5%8D%81%EF%BC%8C%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AF%84%E4%BB%B7/%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AF%84%E4%BB%B7/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">第九章：非监督模式识别</span>
+                                <span class="post-nav-title-item">第十章：模式识别系统的评价</span>
                                 <span class="post-nav-item">Prev posts</span>
                             </span>
                         </a>
@@ -473,45 +473,81 @@ mjx-container[display="true"] + br {
 
         
             <div class="comment-container">
-                if (hexo-config('comment.enable') == true && hexo-config('comment.use') != "") {
-  if (hexo-config('comment.use') == "valine") {
-    @require "./valine.styl";
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;Comments</i>
+    </div>
+    
 
-  } else if (hexo-config('comment.use') == "gitalk") {
-    @require "./gitalk.styl";
+        
+            
+    <div class="valine-container">
+        <script 
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+        <div id="vcomments"></div>
+        <script >
+            function loadValine() {
+                new Valine({
+                    el: '#vcomments',
+                    appId: 'U9OOUllxVvq3BsPn2h0VjGlp-gzGzoHsz',
+                    appKey: 'gMhnEcD9uQNOExBmgYIAjg04',
+                    meta: ['nick', 'mail', 'link'],
+                    avatar: 'wavatar',
+                    enableQQ: true,
+                    placeholder: '😜 尽情吐槽吧~',
+                    lang: 'en'.toLowerCase()
+                });
 
-  } else if (hexo-config('comment.use') == "twikoo") {
-    @require "./twikoo.styl";
-  }
-}
+                function getAuthor(language) {
+                    switch (language) {
+                        case 'en':
+                            return 'Author';
+                        case 'zh-CN':
+                            return '博主';
+                        default:
+                            return 'Master';
+                    }
+                }
 
-.comments-container {
-  display: inline-block;
-  margin-top: $component-spacing-value;
-  width: 100%;
+                // Add "Author" identify
+                const getValineDomTimer = setInterval(() => {
+                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+                    if (vcards.length > 0) {
+                        let author = 'Xiao Feng';
 
-  #comment-anchor {
-    width: 100%;
-    height: 10px;
-  }
+                        if (author) {
+                            for (let vcard of vcards) {
+                                const vnick_dom = vcard.querySelector('.vhead .vnick');
+                                const vnick = vnick_dom.innerHTML;
+                                if (vnick === author) {
+                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
+                                }
+                            }
+                        }
+                        clearInterval(getValineDomTimer);
+                    } else {
+                        clearInterval(getValineDomTimer);
+                    }
+                }, 2000);
+            }
 
-  .comment-area-title {
-    width: 100%;
-    margin: 10px 0;
-    font-size: 1.38rem;
-    color: var(--default-text-color);
+            if ('false') {
+                const loadValineTimeout = setTimeout(() => {
+                    loadValine();
+                    clearTimeout(loadValineTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadValine);
+            }
+        </script>
+    </div>
 
-    i {
-      color: var(--default-text-color);
-    }
 
-    +keep-tablet() {
-      margin: 5px 0;
-      font-size: 1.2rem;
-    }
-  }
 
-}
+        
+    
+</div>
 
             </div>
         
