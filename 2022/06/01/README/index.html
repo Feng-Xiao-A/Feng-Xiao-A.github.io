@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<script src="/live2d-widget/autoload.js"></script>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Xiao Feng">
+    
+    <title>
+        
+            README |
+        
+        🍃
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"center","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"当太阳升起时，便无需灯塔的微光"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                🍃
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                主页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                种类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/changelog"
+                            >
+                                更新日志
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">主页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">种类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/changelog">更新日志</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">README</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Xiao Feng</span>
+                        
+                            <span class="author-label">Architect</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-06-01 07:00:00</span>
+        <span class="mobile">2022-06-01 07:00</span>
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/README/">README</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/README/">README</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.5k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>8 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <p><img src="/2022/06/01/README/MaidDay4.webp" alt="MaidDay4" style="zoom:25%;"></p>
+<span id="more"></span>
+<blockquote>
+<p>封面图片出自哪我忘了，作为一个懒人懒得引用链接了</p>
+</blockquote>
+<h4 id="本站说明">本站说明</h4>
+<blockquote>
+<p>啊，还没想好，至少建站目标是<a class="link" target="_blank" rel="noopener" href="https://distill.pub/">🌟<i class="fas fa-external-link-alt"></i></a> （似乎，貌似，可能，应该，9成达不到。。。至少是一大段时间内。</p>
+<p>博主可能23年4月份才会开始认真写blog吧，到时重新部署一下Blog，Hexo 还是差点格调。</p>
+</blockquote>
+<h4 id="更新日志">更新日志</h4>
+<p><strong>第 0 期更新</strong></p>
+<blockquote>
+<p>搬运了以前模式识别相关的一些笔记，参考 / 抄 的是（模式识别.第四版，机器学习西瓜书，统计学习方法，凸优化，wiki，Pattern Recognition and Machine Learning，Pattern Classification）。如果读者没有相关基础的话还是不建议看了，自我评价是写的挺糟糕的（本来就是笔记可以理解！！</p>
+<p>话说：模式识别和西瓜书看起来就像是最后两者的摘记再格外缝合了一些热点内容（没有黑的意思，作者还是挺用心的），上面硬核内容的基本还得看原书才能真正看明白。</p>
+</blockquote>
+<p><strong>第 1 期更新</strong>（23年4月开始，但也不排除博主心血来潮在22年暑假结束前就更完了（也有提桶跑路的可能</p>
+<p>包括但不限于以下内容</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://www.deeplearningbook.org/">deep learning<i class="fas fa-external-link-alt"></i></a>（花书）</p>
+<p><a class="link" target="_blank" rel="noopener" href="http://cs231n.stanford.edu/">22年cs231n<i class="fas fa-external-link-alt"></i></a></p>
+<p>即便是AI领域的一个萌新 researcher 也应该有所了解的论文：</p>
+<p>LeNet-5：<a class="link" target="_blank" rel="noopener" href="http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf">GradientBased Learning Applied to Document Recognition<i class="fas fa-external-link-alt"></i></a></p>
+<p>ImageNet： <a class="link" target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/5206848">ImageNet: A large-scale hierarchical image database<i class="fas fa-external-link-alt"></i></a></p>
+<p>AlexNet：<a class="link" target="_blank" rel="noopener" href="https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf">ImageNet Classification with Deep Convolutional Neural Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>NIN：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1312.4400">Network In Network<i class="fas fa-external-link-alt"></i></a></p>
+<p>VGG：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1409.1556">Very Deep Convolutional Networks for Large-Scale Image Recognition<i class="fas fa-external-link-alt"></i></a></p>
+<p>GoogLeNet：<a class="link" target="_blank" rel="noopener" href="https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf">Going Deeper with Convolutions<i class="fas fa-external-link-alt"></i></a></p>
+<p>ResNet：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1512.03385">Deep Residual Learning for Image Recognition<i class="fas fa-external-link-alt"></i></a></p>
+<p>SENet：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1709.01507">Squeeze-and-Excitation Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>DenseNet：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1608.06993">Densely Connected Convolutional Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>RNN：<a class="link" target="_blank" rel="noopener" href="http://psych.colorado.edu/~kimlab/elman1990.pdf">Finding Structure in Time<i class="fas fa-external-link-alt"></i></a></p>
+<p>LSTM： <a class="link" target="_blank" rel="noopener" href="http://www.bioinf.jku.at/publications/older/2604.pdf">LONG SHORT-TERM MEMORY<i class="fas fa-external-link-alt"></i></a></p>
+<p>GRU：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/1701.05923.pdf">Gate-Variants of Gated Recurrent Unit (GRU) Neural Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>Seq2Seq：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1409.3215">Sequence to Sequence Learning with Neural Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation：</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1406.1078">Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation<i class="fas fa-external-link-alt"></i></a></p>
+<p>首次将带有注意力机制的神经网络应用于机器翻译：</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/1409.0473.pdf">NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE<i class="fas fa-external-link-alt"></i></a></p>
+<p>BP：<a class="link" target="_blank" rel="noopener" href="https://www.semanticscholar.org/paper/Learning-representations-by-back-propagating-errors-Rumelhart-Hinton/052b1d8ce63b07fec3de9dbb583772d860b7c769">Learning representations by back-propagating errors<i class="fas fa-external-link-alt"></i></a></p>
+<p>Knowledge Distilling ：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1503.02531">Distilling the Knowledge in a Neural Network<i class="fas fa-external-link-alt"></i></a></p>
+<p>Adversarial Examples：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1412.6572">EXPLAINING AND HARNESSING ADVERSARIAL EXAMPLES<i class="fas fa-external-link-alt"></i></a></p>
+<p>Deep Q-Learning：<a class="link" target="_blank" rel="noopener" href="https://daiwk.github.io/assets/dqn.pdf">Human-level control through deep reinforcement learning<i class="fas fa-external-link-alt"></i></a></p>
+<p>Neural Architecture Search with Reinforcement Learning： <a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1611.01578">Neural Architecture Search with Reinforcement Learning<i class="fas fa-external-link-alt"></i></a></p>
+<p>GNN：<a class="link" target="_blank" rel="noopener" href="https://ro.uow.edu.au/cgi/viewcontent.cgi?article=10501&amp;context=infopapers">The Graph Neural Network Model<i class="fas fa-external-link-alt"></i></a></p>
+<p>GCN：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1609.02907">Semi-Supervised Classification with Graph Convolutional Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>A survey of transfer learning：<a class="link" target="_blank" rel="noopener" href="https://journalofbigdata.springeropen.com/articles/10.1186/s40537-016-0043-6">A survey of transfer learning<i class="fas fa-external-link-alt"></i></a></p>
+<p>Batch Normalization： <a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1502.03167">Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift<i class="fas fa-external-link-alt"></i></a></p>
+<p>Group Normalization：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/1803.08494.pdf">Group Normalization<i class="fas fa-external-link-alt"></i></a></p>
+<p>Adam：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1412.6980">Adam: A Method for Stochastic Optimization<i class="fas fa-external-link-alt"></i></a></p>
+<p>Style Transfer：<a class="link" target="_blank" rel="noopener" href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf">Image Style Transfer Using Convolutional Neural Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>Perceptual Losses for Real-Time Style Transfer and Super-Resolution： <a class="link" target="_blank" rel="noopener" href="http://svl.stanford.edu/assets/papers/JohnsonECCV16.pdf">Perceptual Losses for Real-Time Style Transfer and Super-Resolution<i class="fas fa-external-link-alt"></i></a></p>
+<p>deep dream：<a class="link" target="_blank" rel="noopener" href="https://github.com/google/deepdream">deep dream<i class="fas fa-external-link-alt"></i></a></p>
+<p>Show, Attend and Tell：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/1502.03044.pdf">Show, Attend and Tell: Neural Image Caption Generation with Visual Attention<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/1311.2901.pdf">Visualizing and Understanding Convolutional Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1312.6034">Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1506.06579">Understanding Neural Networks Through Deep Visualization<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/1610.07629.pdf">A Learned Representation For Artistic Style<i class="fas fa-external-link-alt"></i></a></p>
+<hr>
+<p><strong>Transformers：</strong>其重要性可用 <strong><a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2105.08050">Pay Attention to MLPs<i class="fas fa-external-link-alt"></i></a></strong> 正文的第一句话来概括 ! Transformers [1] have enabled many breakthroughs in natural language processing (e.g., [2, 3, 4, 5, 6]) and have been shown to work well for computer vision (e.g., [7, 8, 9, 10]). Thanks to this success, <strong>Transformers have largely replaced LSTM-RNN [11] as the default architecture in NLP, and have become an appealing alternative to ConvNets [12, 13, 14, 15, 16, 17] in computer vision.</strong></p>
+<p>Transformers：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1706.03762">Attention Is All You Need<i class="fas fa-external-link-alt"></i></a></p>
+<p>Transformers are RNNs：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2006.16236">Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention<i class="fas fa-external-link-alt"></i></a></p>
+<p>Vision transformer（ViT）：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2010.11929">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale<i class="fas fa-external-link-alt"></i></a></p>
+<p>Switch Transformers：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2101.03961">Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity<i class="fas fa-external-link-alt"></i></a></p>
+<p>Swin Transformer：<a class="link" target="_blank" rel="noopener" href="https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.pdf">Swin Transformer: Hierarchical Vision Transformer using Shifted Windows<i class="fas fa-external-link-alt"></i></a></p>
+<p>SwinIR：<a class="link" target="_blank" rel="noopener" href="https://www.zhihu.com/search?type=content&amp;q=ai%E5%BF%85%E8%AF%BB%E8%AE%BA%E6%96%87">SwinIR: Image restoration using swin transformer<i class="fas fa-external-link-alt"></i></a></p>
+<p>BEiT： <a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2106.08254">BERT Pre-Training of Image Transformers<i class="fas fa-external-link-alt"></i></a> 视觉BERT预训练模型</p>
+<p>iBOT：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2111.07832">Image BERT Pre-Training with Online Tokenizer<i class="fas fa-external-link-alt"></i></a></p>
+<p>MAE：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/2111.06377.pdf">Masked Autoencoders Are Scalable Vision Learners<i class="fas fa-external-link-alt"></i></a> （CV 版本的Bert？）通向CV大模型</p>
+<p>SimMIM： <a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/2111.09886.pdf">SimMIM：a Simple Framework for Masked Image Modeling<i class="fas fa-external-link-alt"></i></a></p>
+<p>SimCLR：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/2002.05709.pdf">A Simple Framework for Contrastive Learning of Visual Representations<i class="fas fa-external-link-alt"></i></a></p>
+<p>MoCo：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1911.05722">Momentum Contrast for Unsupervised Visual Representation Learning<i class="fas fa-external-link-alt"></i></a></p>
+<p>MoCo v2：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2003.04297">Improved Baselines with Momentum Contrastive Learning<i class="fas fa-external-link-alt"></i></a></p>
+<p>MoCo v3：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2104.02057">An Empirical Study of Training Self-Supervised Vision Transformers<i class="fas fa-external-link-alt"></i></a></p>
+<p>ConvMAE：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2205.03892">ConvMAE: Masked Convolution Meets Masked Autoencoders<i class="fas fa-external-link-alt"></i></a></p>
+<p>Contrastive Predictive Coding (CPC)：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1807.03748">Representation Learning with Contrastive Predictive Coding<i class="fas fa-external-link-alt"></i></a></p>
+<p>Contrastive Language Image Pre-training (CLIP) <a class="link" target="_blank" rel="noopener" href="https://openai.com/blog/clip/">CLIP: Connecting Text and Images<i class="fas fa-external-link-alt"></i></a></p>
+<hr>
+<p>GPT-1：<a class="link" target="_blank" rel="noopener" href="https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf">Improving Language Understanding by Generative Pre-Training<i class="fas fa-external-link-alt"></i></a></p>
+<p>GPT-2：<a class="link" target="_blank" rel="noopener" href="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf">Language Models are Unsupervised Multitask Learners<i class="fas fa-external-link-alt"></i></a></p>
+<p>GPT-3：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2005.14165">Language Models are Few-Shot Learners<i class="fas fa-external-link-alt"></i></a></p>
+<p>iGPT ：<a class="link" target="_blank" rel="noopener" href="https://openai.com/blog/image-gpt/">Image GPT<i class="fas fa-external-link-alt"></i></a></p>
+<p>Generative Pretraining from Pixels：<a class="link" target="_blank" rel="noopener" href="https://cdn.openai.com/papers/Generative_Pretraining_from_Pixels_V2.pdf">Generative Pretraining from Pixels<i class="fas fa-external-link-alt"></i></a></p>
+<p>BERT：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1810.04805">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding<i class="fas fa-external-link-alt"></i></a></p>
+<p>word2vec：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1301.3781">Efficient Estimation of Word Representations in Vector Space<i class="fas fa-external-link-alt"></i></a></p>
+<p>Glove：<a class="link" target="_blank" rel="noopener" href="https://nlp.stanford.edu/pubs/glove.pdf">GloVe: Global Vectors for Word Representation<i class="fas fa-external-link-alt"></i></a></p>
+<p>ELMo：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1802.05365">Deep contextualized word representations<i class="fas fa-external-link-alt"></i></a></p>
+<hr>
+<p><strong>Pretext task:</strong></p>
+<p>predict rotations：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1803.07728">Unsupervised Representation Learning by Predicting Image Rotations<i class="fas fa-external-link-alt"></i></a></p>
+<p>predict relative patch locations：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1505.05192">Unsupervised Visual Representation Learning by Context Prediction<i class="fas fa-external-link-alt"></i></a></p>
+<p>solving “jigsaw puzzles”：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1603.09246">Unsupervised Learning of Visual Representations by Solving Jigsaw Puzzles<i class="fas fa-external-link-alt"></i></a></p>
+<p>predict missing pixels (inpainting)：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/1604.07379.pdf">Context Encoders: Feature Learning by Inpainting<i class="fas fa-external-link-alt"></i></a></p>
+<p>image coloring：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1603.08511">Colorful Image Colorization<i class="fas fa-external-link-alt"></i></a></p>
+<p>video coloring：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1806.09594">Tracking Emerges by Colorizing Videos<i class="fas fa-external-link-alt"></i></a></p>
+<p>Transfer learned features to supervised learning：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1611.09842">Split-Brain Autoencoders: Unsupervised Learning by Cross-Channel Prediction<i class="fas fa-external-link-alt"></i></a></p>
+<hr>
+<p>Variational Inference：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1601.00670">Variational Inference: A Review for Statisticians<i class="fas fa-external-link-alt"></i></a></p>
+<p>VAE ：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1312.6114">Auto-Encoding Variational Bayes<i class="fas fa-external-link-alt"></i></a></p>
+<p>GAN：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1406.2661">Generative Adversarial Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>CGAN：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1411.1784">Conditional GANs<i class="fas fa-external-link-alt"></i></a></p>
+<p>DCGAN：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1511.06434">Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>Improved Techniques for Training GANs：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1606.03498">improved Techniques for Training GANs<i class="fas fa-external-link-alt"></i></a></p>
+<p>Pix2Pix：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1611.07004">Image-to-Image Translation with Conditional Adversarial Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>WGAN：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1701.07875">Wasserstein GAN<i class="fas fa-external-link-alt"></i></a></p>
+<p>CycleGAN：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1703.10593">Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>StyleGAN：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1812.04948">A Style-Based Generator Architecture for Generative Adversarial Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>BigGAN：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1809.11096">Large Scale GAN Training for High Fidelity Natural Image Synthesis<i class="fas fa-external-link-alt"></i></a></p>
+<p>SAGAN：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1805.08318">Self-Attention Generative Adversarial Networks<i class="fas fa-external-link-alt"></i></a></p>
+<hr>
+<p><strong>Semantic Segmentation Idea: Fully Convolutional</strong></p>
+<p><strong>FCN</strong>：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1411.4038">Fully Convolutional Networks for Semantic Segmentation<i class="fas fa-external-link-alt"></i></a></p>
+<p>DeconvNet： <a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1505.04366">Learning Deconvolution Network for Semantic Segmentation<i class="fas fa-external-link-alt"></i></a></p>
+<p>object instance segmentation：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1703.06870">Mask R-CNN<i class="fas fa-external-link-alt"></i></a></p>
+<hr>
+<p><strong>Object Detection</strong></p>
+<p><a class="link" target="_blank" rel="noopener" href="http://calvin-vision.net/wp-content/uploads/Publications/alexe12pami.pdf">Measuring the objectness of image windows<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link" target="_blank" rel="noopener" href="http://www.huppelen.nl/publications/selectiveSearchDraft.pdf">Selective Search for Object Recognition<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://www.robots.ox.ac.uk/~tvg/publications/2019/Cheng_BING_Binarized_Normed_2014_CVPR_paper.pdf">Binarized normed gradients for objectness estimation at 300fps<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://pdollar.github.io/files/papers/ZitnickDollarECCV14edgeBoxes.pdf">Edge Boxes: Locating Object Proposals from Edges<i class="fas fa-external-link-alt"></i></a></p>
+<p>OverFeat：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1312.6229">OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>R-CNN：<a href>Rich feature hierarchies for accurate object detection and semantic segmentation Tech report (v5)</a></p>
+<p>Fast R-CNN：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1504.08083">Fast R-CNN<i class="fas fa-external-link-alt"></i></a></p>
+<p>Faster R-CNN：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1506.01497">Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>YOLO 1：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1506.02640">You Only Look Once: Uniﬁed, Real-Time Object Detection<i class="fas fa-external-link-alt"></i></a></p>
+<p>YOLO 2：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1612.08242">YOLO9000: Better, Faster, Stronger<i class="fas fa-external-link-alt"></i></a></p>
+<p>YOLO 3：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1804.02767">YOLOv3: An Incremental Improvement<i class="fas fa-external-link-alt"></i></a></p>
+<p>YOLO 4：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2004.10934">YOLOv4: Optimal Speed and Accuracy of Object Detection<i class="fas fa-external-link-alt"></i></a></p>
+<p>YOLO 5：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2104.13634">A Deep Learning Object Detection Method for an Efficient Clusters Initialization<i class="fas fa-external-link-alt"></i></a></p>
+<hr>
+<p><strong>Video Understanding</strong></p>
+<p><strong>Two-Stream：</strong><a class="link" target="_blank" rel="noopener" href="https://proceedings.neurips.cc/paper/2014/file/00ec53c4682d36f5c4359f4ae7bd7ba1-Paper.pdf">Two-Stream Convolutional Networks for Action Recognition in Videos<i class="fas fa-external-link-alt"></i></a> 视频理解开山之作</p>
+<p>Large-scale Video Classification with Convolutional Neural Networks</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/42455.pdf">Large-scale Video Classification with Convolutional Neural Networks<i class="fas fa-external-link-alt"></i></a></p>
+<p>Convolutional Two-Stream Network Fusion for Video Action Recognition</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/1604.06573.pdf">Convolutional Two-Stream Network Fusion for Video Action Recognition<i class="fas fa-external-link-alt"></i></a></p>
+<p>Learning Spatiotemporal Features with 3D Convolutional Networks</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/1412.0767">Tran et al, “Learning Spatiotemporal Features with 3D Convolutional Networks”, ICCV 2015<i class="fas fa-external-link-alt"></i></a></p>
+<p>inflated 3D network（I3D）： <a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/1705.07750.pdf">Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset<i class="fas fa-external-link-alt"></i></a></p>
+<p>A Comprehensive Study of Deep Video Action Recognition</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/2012.06567.pdf">A Comprehensive Study of Deep Video Action Recognition<i class="fas fa-external-link-alt"></i></a></p>
+<hr>
+<hr>
+<p><strong>Alphago</strong>：<a class="link" target="_blank" rel="noopener" href="https://www.researchgate.net/publication/292074166_Mastering_the_game_of_Go_with_deep_neural_networks_and_tree_search">Mastering the game of Go with deep neural networks and tree search<i class="fas fa-external-link-alt"></i></a></p>
+<p>AlphaCode：<a class="link" target="_blank" rel="noopener" href="https://storage.googleapis.com/deepmind-media/AlphaCode/competition_level_code_generation_with_alphacode.pdf">Competition-Level Code Generation with AlphaCode<i class="fas fa-external-link-alt"></i></a></p>
+<p>Copilot背后的功臣：OpenAI Codex：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/2107.03374.pdf">Evaluating Large Language Models Trained on Code<i class="fas fa-external-link-alt"></i></a></p>
+<p>CLIP ：<a target="_blank" rel="noopener" href="https://openai.com/blog/clip/"><em>Contrastive Language–Image Pre-training</em>)</a></p>
+<p>AlphaFold（突破性研究）：<a class="link" target="_blank" rel="noopener" href="https://discovery.ucl.ac.uk/id/eprint/10089234/1/343019_3_art_0_py4t4l_convrt.pdf">AlphaFold: Improved protein structure prediction using potentials from deep learning<i class="fas fa-external-link-alt"></i></a></p>
+<p>ALphaFold 2：<a class="link" target="_blank" rel="noopener" href="https://www.nature.com/articles/s41586-021-03819-2.pdf">Highly accurate protein structure prediction with AlphaFold<i class="fas fa-external-link-alt"></i></a></p>
+<p>Advancing mathematics by guiding human intuition with AI：</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://www.nature.com/articles/s41586-021-04086-x.pdf">Advancing mathematics by guiding human intuition with AI<i class="fas fa-external-link-alt"></i></a></p>
+<p>Skillful Precipitation Nowcasting using Deep Generative Models of Radar：</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://www.nature.com/articles/s41586-021-03854-z">Skillful Precipitation Nowcasting using Deep Generative Models of Radar<i class="fas fa-external-link-alt"></i></a></p>
+<hr>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：README</li>
+        <li>Post author：Xiao Feng</li>
+        <li>Create time：2022-06-01 07:00:00</li>
+        <li>
+            Post link：https://xiao-fengfeng.github.io/2022/06/01/README/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/README/">#README</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2021/10/13/Pattern%20Recognition/%E5%8D%81%E4%B8%89%EF%BC%8C%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AF%84%E4%BB%B7/%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AF%84%E4%BB%B7/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">十三，模式识别系统的评价</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+            <div class="comment-container">
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;Comments</i>
+    </div>
+    
+
+        
+            
+    <div class="valine-container">
+        <script 
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+        <div id="vcomments"></div>
+        <script >
+            function loadValine() {
+                new Valine({
+                    el: '#vcomments',
+                    appId: 'U9OOUllxVvq3BsPn2h0VjGlp-gzGzoHsz',
+                    appKey: 'gMhnEcD9uQNOExBmgYIAjg04',
+                    meta: ['nick', 'mail', 'link'],
+                    avatar: 'wavatar',
+                    enableQQ: true,
+                    placeholder: '😜 尽情吐槽吧~',
+                    lang: 'en'.toLowerCase()
+                });
+
+                function getAuthor(language) {
+                    switch (language) {
+                        case 'en':
+                            return 'Author';
+                        case 'zh-CN':
+                            return '博主';
+                        default:
+                            return 'Master';
+                    }
+                }
+
+                // Add "Author" identify
+                const getValineDomTimer = setInterval(() => {
+                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+                    if (vcards.length > 0) {
+                        let author = 'Xiao Feng';
+
+                        if (author) {
+                            for (let vcard of vcards) {
+                                const vnick_dom = vcard.querySelector('.vhead .vnick');
+                                const vnick = vnick_dom.innerHTML;
+                                if (vnick === author) {
+                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
+                                }
+                            }
+                        }
+                        clearInterval(getValineDomTimer);
+                    } else {
+                        clearInterval(getValineDomTimer);
+                    }
+                }, 2000);
+            }
+
+            if ('false') {
+                const loadValineTimeout = setTimeout(() => {
+                    loadValine();
+                    clearTimeout(loadValineTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadValine);
+            }
+        </script>
+    </div>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Xiao Feng</a>
+        </div>
+        
+            <script async  src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E7%AB%99%E8%AF%B4%E6%98%8E"><span class="nav-text">本站说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97"><span class="nav-text">更新日志</span></a></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-copy.js"></script>
+
+
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
+    
+</div>
+
+
+
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=r2yIRa9FbBFc_H1Q1qE0yIBoSRRIz6f4ZEhATAsDYkg&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
+</body>
+</html>
+
+
+
+
+
+
+
